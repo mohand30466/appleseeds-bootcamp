@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* id wins all classes */
+    
+    #big-boss {
+        color: yellow;
+    }
+    
+    #big-boss:hover {
+        color: red;
+    }
+    /* 2 points */
+    
+    .container .second {
+        color: red;
+        font-size: 20px;
+    }
+    /* 1 point */
+    
+    .second {
+        color: blue;
+    }
+    /* 1 point */
+    
+    .third {
+        color: green;
+    }
+    /* 2 points but it comes last so it will override the 2 points that are above*/
+    
+    .second.third {
+        color: black;
+    }
+    /* id plus one point wins id */
+    /* #big-boss.second {
+        color: purple;
+    } */
+    /* Important beats ids even with points but not inline-stryle */
+    /* .third {
+        color: brown !important;
+    } */
+    
+    .second:hover {
+        color: blue;
+    }
+    /* inline-style wins everybody!!!!!!!!!!!! */
+</style>
+
+<body>
+    <div class="container">
+        <div id="big-boss" class="second third">I am second</div>
+    </div>
+
+
+
+
+</body>
+
+</html>

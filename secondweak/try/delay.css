@@ -1,0 +1,10 @@
+p {
+    background-color: wheat;
+    display: inline;
+    color: teal;
+    transition: font-size 1s 0.5s;
+}
+
+p:hover {
+    font-size: 35px;
+}

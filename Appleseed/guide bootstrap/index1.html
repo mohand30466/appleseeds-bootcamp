@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let school = {
+            teacher: [{
+                name: "gandalf",
+                subjet: "sorcery",
+                limit: 2,
+                student: [],
+            }, {
+                name: "jihn",
+                subjet: "wizery",
+                limit: 1,
+                student: [],
+            }],
+            students: [{
+                    name: "adam",
+                    subject: "wizrey"
+                }, {
+                    name: "adam2",
+                    subject: "sorcery"
+                }, {
+                    name: "adam3",
+                    subject: "wizrey"
+                }, {
+                    name: "adam4",
+                    subject: "sorcery"
+                }
+
+            ],
+        }
+        const assignstudent = (student) => {
+            for (const teacher of school.teacher) {
+                if (student.subject === teacher.subject && teacher.limit > teacher.student.length) {
+                    teacher.students.push(status);
+                    break;
+                }
+            }
+
+        }
+        for (let student of school.students) {
+            assignstudent(student);
+
+        }
+    </script>
+
+</body>
+
+</html>

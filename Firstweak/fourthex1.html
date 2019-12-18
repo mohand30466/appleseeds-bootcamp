@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .row{
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .column {
+            
+            display: inline-block;
+            vertical-align: middle;
+            width: 20%;
+            padding: 10px;
+            height: 300px;
+            margin: 5px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .column{
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Four Equal Columns</h2>
+
+    <div class="row">
+        <div class="column" style="background-color:black; color: white;">
+            <h2>first item</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae vitae tenetur ipsum vel quas
+                delectus porro nesciunt velit quasi itaque. Repudiandae inventore dolor dolorum ullam perspiciatis!
+                Commodi, soluta! Perspiciatis, fuga!</p>
+        </div>
+        <div class="column" style="background-color:black; color: white;">
+            <h2>second item</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptate sunt, voluptates ex
+                voluptatum maiores. Sint sunt quia molestiae pariatur quas ea ad adipisci. Dignissimos architecto autem
+                amet aliquam laudantium?</p>
+        </div>
+        <div class="column" style="background-color:black; color: white;">
+            <h2>third item</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, quis? Ducimus, expedita. Officiis
+                dolor magnam tempora. Tenetur, iste a dignissimos natus dolore quae commodi aspernatur amet perferendis
+                iure quam similique.</p>
+        </div>
+        <div class="column" style="background-color:black; color: white;">
+            <h2>fourth item</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, labore aperiam similique dolor
+                reprehenderit officia ducimus molestias obcaecati, nisi illum dicta! Quidem adipisci consectetur minima
+                dolorem molestiae tempora dolor sint!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calck {
+    width: 400px;
+}
+
+.main-screen {
+    width: 100%;
+    height: 70px;
+    font-size: 42px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.row {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.btn {
+    font-size: 42px;
+    font-family: 'Courier New', Courier, monospace;
+    flex: 1;
+}
+
+
+/* #calcl.off button */

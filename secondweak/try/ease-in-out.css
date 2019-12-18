@@ -1,0 +1,54 @@
+.magicalbox1:hover {
+    width: 300px;
+}
+
+.magicalbox1 {
+    text-align: center;
+    color: red;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: width 2s;
+    transition-timing-function: ease-in-out 2s;
+}
+
+.magicalbox2:hover {
+    width: 300px;
+}
+
+.magicalbox2 {
+    text-align: center;
+    color: rgb(0, 255, 42);
+    width: 100px;
+    height: 100px;
+    background: grey;
+    transition: width 2s;
+}
+
+.magicalbox3:hover {
+    width: 300px;
+}
+
+.magicalbox3 {
+    text-align: center;
+    color: blue;
+    width: 100px;
+    height: 100px;
+    background: rgb(0, 255, 42);
+    transition: width 2s;
+    transition-timing-function: ease-in-out 2s;
+}
+
+.magicalbox4:hover {
+    width: 300px;
+}
+
+.magicalbox4 {
+    text-align: center;
+    color: gold;
+    width: 100px;
+    height: 100px;
+    background: rgb(27, 34, 15);
+    transition: width 2s;
+    transition-timing-function: ease-in-out 2s;
+}

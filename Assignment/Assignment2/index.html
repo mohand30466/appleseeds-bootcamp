@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trip Orgnizer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .box {
+            display: flex;
+            width: 200px;
+            margin-left: px;
+            text-decoration: none;
+        }
+        
+        .box ul li a {
+            color: white;
+        }
+        
+        .right {
+            position: relative;
+        }
+        
+        .left {
+            width: 800px;
+            margin-left: 400px;
+            font-size: 40px;
+            transition-duration: 1s;
+        }
+        
+        .left:hover {
+            background-color: thistle;
+            color: yellowgreen;
+        }
+        
+        .card-footer {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: gray;
+        }
+        
+        .card-footer:hover {
+            background-color: khaki;
+            color: red;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand">
+            <img alt="Nexit" src="https://ph-files.imgix.net/d023f713-7b72-4383-8436-89551cdb2ba0?auto=format&amp;auto=compress&amp;codec=mozjpeg&amp;cs=strip&amp;w=50&amp;h=50&amp;fit=crop" srcset="https://ph-files.imgix.net/d023f713-7b72-4383-8436-89551cdb2ba0?auto=format&amp;auto=compress&amp;codec=mozjpeg&amp;cs=strip&amp;w=50&amp;h=50&amp;fit=crop&amp;dpr=2 2x, https://ph-files.imgix.net/d023f713-7b72-4383-8436-89551cdb2ba0?auto=format&amp;auto=compress&amp;codec=mozjpeg&amp;cs=strip&amp;w=50&amp;h=50&amp;fit=crop&amp;dpr=3 3x"
+                style="width: 50px; height: 50px;">
+        </a>
+        <div class="row" style="background-color: beige;">
+            <div class="col-md-2">
+                <a href="#">
+                    <h5>Next</h5>
+                </a>
+            </div>
+            <div class="col-md-6">Road trips the way you always wanted</div>
+        </div>
+        <div class="upload" style="background-color: burlywood;">
+            <form class="form-inline">
+                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">UPVOTE </button>
+            </form>
+
+        </div>
+
+    </nav>
+    <div class="jumbotron" style="background-image: url('img/travel.png');">
+
+        <div class="box">
+            <div class="right">
+                <img src="https://mybahotel.com/wp-content/uploads/2018/11/An-Extravagance-Travel-Agent-Can-Produce-A-Holiday-Classic.png" alt="">
+            </div>
+            <div class="left">
+                <h2>Activity</h2>
+                <ul>
+                    <li><a href="#">Camping</a></li>
+                    <li><a href="#">See jurney</a></li>
+                    <!-- <li><a href="#">Travekl around the world</a></li> -->
+                    <li><a href="#">Event Travel</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Find great places
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Eilat</a></li>
+                <li><a href="#">Jerusalem</a></li>
+                <li><a href="#">Tiberias</a></li>
+                <li><a href="#">Dead sea</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-footer">
+            <div>Enjoy</div>
+            <div>Your</div>
+            <div>Trip</div>
+
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

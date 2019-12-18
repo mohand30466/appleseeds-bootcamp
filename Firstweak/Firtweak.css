@@ -1,0 +1,81 @@
+.genaral {
+    border: 1px black solid;
+    width: 100%;
+    height: 1000px;
+    background-image: url("https://s1.cdn.autoevolution.com/images/news/it-s-now-quicker-to-get-a-model-3-than-an-s-or-an-x-if-you-re-a-tesla-owner-123715_1.jpg");
+}
+
+.menu {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+
+.menu img {
+    float: left;
+    height: 100%;
+    width: 10%;
+}
+
+.item {
+    width: 100%;
+    height: 68%;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.choise {
+    text-align: center;
+    padding-top: 0px;
+    float: right;
+    width: 25%;
+    height: 60px;
+}
+
+.choise img {
+    float: right;
+}
+
+.section {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+}
+
+.box .box1 {
+    background-color: white;
+    border: 2px white solid;
+    border-radius: 15px;
+    display: inline-block;
+    width: 50px;
+    width: 20%;
+}
+
+.box .box2 {
+    background-color: white;
+    display: inline-block;
+    border: 2px white solid;
+    border-radius: 15px;
+    width: 50px;
+    width: 20%;
+}
+
+.section a {
+    padding-top: 30px;
+}
+
+.visit {
+    margin-top: 20px;
+}

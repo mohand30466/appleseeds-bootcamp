@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var in_range = (arr) => arr.flat().reduce(function(sum1, currentValue1) {
+                    return sum1 + currentValue1;
+
+                    function test_equal(actual, expected, msg) {
+                        if (Array.isArray(expected)) {
+                            for (var i = 0; i < expected.length; i++) {
+                                test_equal(actual[i], expected[i], "item in index " + i);
+                            }
+                        } else {
+                            if (actual !== expected) {
+                                console.log(`Error testing ${msg || ''}. expected: ${expected}, got ${actual}`)
+                            }
+                        }
+                    }
+                    test_equal(in_range([2, 33, 46, 22, 29, 1, 7, 45454, 33, 10], 10, 87), [33, 46, 22, 29, 33, 10]);
+                    test_equal(in_range([2], 2, 2), [2]);
+                    test_equal(in_range([2, 3], 2, 2), [2]);
+                    test_equal(in_range([2, 3, 3, 4, 3], 2, 3), [2, 3, 3, 3]);
+    </script>
+
+</body>
+
+</html>

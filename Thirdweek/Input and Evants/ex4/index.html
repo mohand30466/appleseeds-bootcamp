@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100px;
+            display: none;
+        }
+        
+        input {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="check" onclick="button()" />
+    <img style="height:300px" id="imge" src="https://images.unsplash.com/photo-1541233349642-6e425fe6190e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt=""> <span>hi</span>
+
+    <script>
+        button = function() {
+            var x = document.getElementById("check")
+
+            if (x.checked) {
+                document.getElementById("imge").style.display = "inline-block"
+                document.getElementById("imge").style.height = "500px"
+
+            } else {
+                document.getElementById("imge").style.display = "none"
+            }
+            console.log(x);
+        }
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

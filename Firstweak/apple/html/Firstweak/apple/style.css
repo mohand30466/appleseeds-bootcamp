@@ -1,0 +1,45 @@
+.menu {
+    margin: auto;
+    background-color: rgb(44, 44, 44);
+    height: 55px;
+    width: 100%;
+    color: rgb(204, 204, 204);
+    text-align: center;
+}
+
+.menu a {
+    text-align: center;
+    text-decoration: none;
+    background-attachment: fixed;
+    padding: 1%;
+}
+
+img {
+    height: 50px;
+    position: relative;
+}
+
+.gift {
+    border: 1px black solid;
+    background-color: black;
+    height: 120px;
+    color: lavenderblush;
+    text-align: center;
+}
+
+.main {
+    height: 700px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.main img {
+    height: inherit;
+    display: inline;
+}
+
+.main .side img {
+    height: 100%;
+    display: inline;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .menu{
+            border: 2px black solid;
+            
+            height: 50px;
+         
+            background: skyblue;
+            
+            
+            
+            
+            
+        }
+         .img{
+            height: 46px;
+            width: 46px;
+            position: absolute;
+            top:0;
+            left:0;
+            
+            
+        }
+        div a{
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            
+           
+            
+
+        }
+        /* div img{
+           
+            
+            display: inline-block;
+            position: absolute;
+            vertical-align: middle;
+            
+            
+        } */
+            
+         
+           
+    
+     
+    </style>
+   
+</head>
+<body>
+        <nav class="menu">
+                <img src="data:image/png;base64,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">
+                    <div>
+                        <a href="#" class="menu-entry">Home</a> 
+                        <a href="#" class="menu-entry">The program</a> 
+                        <a href="#" class="menu-entry">Hieghlight</a> 
+                        
+                        <img src="itc.png" alt="itc logo" class="menu-entry"> 
+                        <img src="itc.png" alt="itc logo" class="menu-entry">
+                        <img src="itc.png" alt="itc logo" class="menu-entry">
+                    </div>
+               
+            </nav>
+   
+</body>
+</html>

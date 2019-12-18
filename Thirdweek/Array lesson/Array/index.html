@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var getSum = (arr) => arr.reduce(function(sum, currentValue) {
+            return sum + currentValue;
+        }, 0);
+        var getSumNinja = (arr) => arr.flat().reduce(function(sum1, currentValue1) {
+            return sum1 + currentValue1;
+
+
+        }, 0);
+
+
+        function test_equal(actual, expected, msg) {
+            if (Array.isArray(expected)) {
+                for (var i = 0; i < expected.length; i++) {
+                    test_equal(actual[i], expected[i], "item in index " + i);
+                }
+            } else {
+                if (actual !== expected) {
+                    console.log(`Error testing ${msg || ''}. expected: ${expected}, got ${actual}`)
+                }
+            }
+        }
+        test_equal(getSum([]), 0);
+        test_equal(getSum([44]), 44);
+        test_equal(getSum([1, 4, 4, 4]), 13);
+        test_equal(getSumNinja([]), 0);
+        test_equal(getSumNinja([
+            [1],
+            [44],
+            [4]
+        ]), 13);
+        test_equal(getSumNinja([
+            [],
+            [4, 4, 4],
+            [1]
+        ]), 13);
+    </script>
+
+</body>
+
+</html>

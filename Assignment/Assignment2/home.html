@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <title>Album example for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+         :root {
+            --jumbotron-padding-y: 3rem;
+        }
+        
+        .jumbotron {
+            padding-top: var(--jumbotron-padding-y);
+            padding-bottom: var(--jumbotron-padding-y);
+            margin-bottom: 0;
+            background-color: #fff;
+        }
+        
+        @media (min-width: 768px) {
+            .jumbotron {
+                padding-top: calc(var(--jumbotron-padding-y) * 2);
+                padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+            }
+        }
+        
+        .jumbotron p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .jumbotron-heading {
+            font-weight: 300;
+        }
+        
+        .jumbotron .container {
+            max-width: 40rem;
+        }
+        
+        .contant {
+            float: left;
+            height: 600px;
+        }
+        
+        footer {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        
+        footer p {
+            margin-bottom: .25rem;
+        }
+        
+        .box-shadow {
+            box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+        }
+        
+         :root {
+            --jumbotron-padding-y: 3rem;
+        }
+        
+        .jumbotron {
+            padding-top: var(--jumbotron-padding-y);
+            padding-bottom: var(--jumbotron-padding-y);
+            margin-bottom: 0;
+            background-color: #fff;
+        }
+        
+        @media (min-width: 768px) {
+            .jumbotron {
+                padding-top: calc(var(--jumbotron-padding-y) * 2);
+                padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+            }
+        }
+        
+        .jumbotron p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .jumbotron-heading {
+            font-weight: 300;
+        }
+        
+        .jumbotron .container {
+            max-width: 40rem;
+        }
+        
+        footer {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        
+        footer p {
+            margin-bottom: .25rem;
+        }
+        
+        .box-shadow {
+            box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand">
+            <img alt="Nexit" src="https://ph-files.imgix.net/d023f713-7b72-4383-8436-89551cdb2ba0?auto=format&amp;auto=compress&amp;codec=mozjpeg&amp;cs=strip&amp;w=50&amp;h=50&amp;fit=crop" srcset="https://ph-files.imgix.net/d023f713-7b72-4383-8436-89551cdb2ba0?auto=format&amp;auto=compress&amp;codec=mozjpeg&amp;cs=strip&amp;w=50&amp;h=50&amp;fit=crop&amp;dpr=2 2x, https://ph-files.imgix.net/d023f713-7b72-4383-8436-89551cdb2ba0?auto=format&amp;auto=compress&amp;codec=mozjpeg&amp;cs=strip&amp;w=50&amp;h=50&amp;fit=crop&amp;dpr=3 3x"
+                style="width: 50px; height: 50px;">
+        </a>
+        <div class="row">
+            <div class="col-md-2">
+                <h5>Next</h5>
+            </div>
+            <div class="col-md-6">Road trips the way you always wanted</div>
+        </div>
+        <div class="upload">
+            <form class="form-inline">
+                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">UPVOTE </button>
+            </form>
+
+        </div>
+
+    </nav>
+    <!-- 
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact
+                            information.
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                            <li><a href="#" class="text-white">Like on Facebook</a></li>
+                            <li><a href="#" class="text-white">Email me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                    <strong>Album</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            </div>
+        </div>
+    </header> -->
+
+    <main role="main">
+
+
+
+        <div class="album py-5 bg-light">
+            <div class="container" style="background-image: url('img/travel.png');">
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="thumbnail">
+                            <img src="https://mybahotel.com/wp-content/uploads/2018/11/An-Extravagance-Travel-Agent-Can-Produce-A-Holiday-Classic.png" alt="">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                Chooce your trip
+                                            <span class="caret"></span>
+                                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Camping</a></li>
+                                    <li><a href="#">See jurney</a></li>
+                                    <li><a href="#">Travekl around the world</a></li>
+                                    <li><a href="#">Event Travel</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row sidebar">
+                    <div class="col-md-4">
+                        <ul>
+                            <li><a href="#">Camping</a></li>
+                            <li><a href="#">See jurney</a></li>
+                            <li><a href="#">Travekl around the world</a></li>
+                            <li><a href="#">Event Travel</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+            <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+        </div>
+    </footer> -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+</body>
+
+</html>

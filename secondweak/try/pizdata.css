@@ -1,0 +1,75 @@
+.navbar {
+    border: 1px black solid;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    color: white;
+    text-align: center;
+    background-color: tomato;
+    border-radius: 50%;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.discover {
+    border: 1px black solid;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    margin: 12px;
+    border-radius: 5px;
+}
+
+.discover .p {
+    width: 100%;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    height: 30px;
+    width: 300px;
+    margin: 12px;
+    justify-content: space-evenly;
+}
+
+.regester {
+    border: 1pxr red solid;
+    height: 30px;
+    /* margin: 15px; */
+    display: flex;
+    /* justify-content: end; */
+}
+
+.signin {
+    width: 100px;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.signup {
+    width: 150px;
+    color: white;
+    background-color: tomato;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media screen and(max-width: 855px) {
+    .regester {
+        display: none;
+    }
+}

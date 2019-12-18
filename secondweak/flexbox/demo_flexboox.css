@@ -1,0 +1,32 @@
+.continer {
+    border: 1px black solid;
+    width: 90%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.box {
+    border: 1px black solid;
+    background-color: blanchedalmond;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.box .left {
+    background-color: blue;
+    margin: auto;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.box .right {
+    display: flex;
+    border: 1px black solid;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}

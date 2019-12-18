@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num1 = prompt("enter min number");
+        var num2 = prompt("enter max number");
+        var array_of_numbers = [1, 2, 3, 4, 5, 6, 7, 8543, 876, 79];
+
+
+
+        //es5
+        // var result = (min, max, numbers) => {
+        //     var result = []
+
+        //     for (var i = 0; i < numbers.length; i++) {
+        //         if (numbers[i] < max && numbers[i] >= min) {
+        //             result.push(numbers[i])
+        //         }
+        //     }
+        //     return result
+        // }
+        //es6
+        var result = (min, max, numbers) => {
+            var results = numbers.filter(function(i) {
+                return i < max && i > min;
+            })
+            return results
+        }
+
+        console.log(result(num1, num2, array_of_numbers))
+
+
+        // var lucky = numbers.filter(function(number) {
+        //     return number > 7;
+        // });
+    </script>
+
+</body>
+
+</html>

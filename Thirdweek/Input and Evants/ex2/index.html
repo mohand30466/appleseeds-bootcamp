@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <span>Your age is</span>
+
+    <input type="number" id="person" placeholder="18" />
+
+    <button id="button" onclick="personAge();"> Click me </button>
+    <br/>
+
+
+    <script>
+        // var young = 18;
+        // var old = 100;
+        var personAge = function() {
+            var age = document.getElementById("person").value;
+            if (age > 18) {
+                console.log(`your Age is ${age} you can drink pear`);
+            } else {
+                console.log(`your Age is ${age} you are too yung`);
+
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

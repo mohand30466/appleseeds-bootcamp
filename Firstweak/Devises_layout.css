@@ -1,0 +1,61 @@
+.menu {
+    border: 1px rgb(230, 222, 215) solid;
+    height: 900px;
+    width: 100%;
+    background-image: url("https://image.freepik.com/free-vector/facebook-background-with-likes-hearts_23-2147857750.jpg");
+    text-align: center;
+}
+
+.icon {
+    width: 100%;
+    height: 35px;
+    background-color: cyan;
+}
+
+.item {
+    padding-top: 10px;
+}
+
+.item a {
+    color: black;
+    text-decoration: none;
+}
+
+.image img {
+    float: left;
+    width: 40px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.sign {
+    float: right;
+}
+
+.sign a {
+    color: red;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+@media(max-width: 600px) {
+    .menu {
+        background-image: url("https://image.freepik.com/free-vector/facebook-background-with-likes-hearts_23-2147855033.jpg");
+    }
+    .item {
+        display: block;
+    }
+}
+
+@media(max-width: 449px;
+@media(max-width:) {
+    .sign {
+        position: relative;
+    }
+    .menu {
+        background-color: royalblue;
+    }
+    .item {
+        display: block;
+    }
+}

@@ -1,0 +1,35 @@
+    /* @media(max-width: 600px) {
+        body {
+            display: block;
+            height: 25px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        } */
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .container {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+    }
+    
+    @media only screen and (max-width: 900px) and (min-width: 401px) {
+        .container {
+            text-align: center;
+            font-size: 30px;
+            color: burlywood;
+        }
+    }
+    
+    @media only screen and (min-width: 500px)and (max-width: 501px) {
+        .container {
+            text-align: center;
+            font-size: 30px;
+            color: blueviolet;
+        }
+    }

@@ -1,0 +1,49 @@
+        body {
+            margin: 0;
+        }
+
+        div,
+        section {
+            border: black 1px solid;
+        }
+
+        .header, .footer {
+            height: 10vh;
+            box-sizing: border-box;
+        }
+
+        .side {
+            width: 200px;
+        }
+
+        .content {
+            width: calc(100% - 200px);
+        }
+
+        .middle div {
+            height: 80vh;
+            box-sizing: border-box;
+        }
+        .middle>div {
+            display: inline-block;
+            padding: 15px;            
+        }
+        .middle div div {
+            height: calc(80vh - 30px);
+        }
+        .middle {
+            font-size: 0;
+        }
+        @media screen and (max-width: 700px) {
+
+
+       .side{
+          display: none;
+       }   
+       .middle>div {
+        padding: 0px;         
+        }
+        .middle div {
+            width: 1000px;
+        }
+    }

@@ -1,0 +1,32 @@
+.continer {
+    border: 1px rgb(224, 11, 11) solid;
+    width: 70%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.box1 {
+    flex-grow: 4;
+    border: 1px red solid;
+    display: flex;
+    align-items: center;
+}
+
+.box1 .text {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+.box {
+    flex-grow: 2;
+    border: 1px red solid;
+    display: flex;
+    align-items: flex-end;
+}
+
+.buttom {
+    align-content: flex-end;
+}

@@ -1,0 +1,23 @@
+this is the Html and Css important tip
+first
+the body have margine 8px
+we have to kill the margine first
+
+all div by defult display block
+
+second 
+we have three setuation of the element
+
+displayed block every div by defult have 
+that mean it take all the width of the screen
+ 
+display inline that it take just  the contant place
+we defined
+
+display inline block that mean it tale place only we defined by the width and haight
+some time it take the ciplense with them
+
+
+ box-sizing  border box  
+he respect all the width and the hight we give hime whith out care apout margine and padding
+

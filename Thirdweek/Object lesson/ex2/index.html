@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var book1 = [{
+            name: "Giud Book",
+            auther: "Mark Hourd",
+            year: 1999,
+            // language: "Russian"
+        }, {
+            name: "Magic Book",
+            auther: "john Escot",
+            year: 1996
+
+        }]
+        var bookUtils = {
+                getFirstPublished: function(book1, book2) {
+                    if (book1.year < book2.year) {
+                        return book1.year;
+                    } else {
+                        return book2.year;
+                    }
+                },
+                setLanguage: function(book, language) {
+                    // myObj[prop] = value;
+                    book.languge = language;
+                    return book;
+                },
+
+                setTranslation: function(book, language, translate) {
+                    book.translation = {
+                        language = language,
+                        translate = translate,
+
+                    }
+                }
+            }
+            // console.log(setLanguage(book1[0], "Hebrew").language);
+         bookUtils.setTranslation(book1, "chinese", "Han Liu");
+        bookUtils.setLanguage(book1[0], "Hebrew");
+        var test = bookUtils.getFirstPublished(book1[0], book1[1])
+        console.log(test);
+        var result = bookUtils.setLanguage(book1[0], "english");
+        console.log(result);
+    </script>
+
+
+</body>
+
+</html>

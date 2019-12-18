@@ -1,0 +1,58 @@
+.continer {
+    border: 1px red solid;
+    width: 70%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    border: 1px red solid;
+    height: 450px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    border: 1px red solid;
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    justify-items: center;
+}
+
+.btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* <!--this is the footer side of nanja--> */
+
+.footer {
+    border: 1px red solid;
+    background-color: sandybrown;
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left,
+.btn_right {
+    border: 1px red solid;
+    background-color: red;
+    margin: 10px;
+    height: 50px;
+    width: 90px
+}
+
+.footer .right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    float: left;
+}

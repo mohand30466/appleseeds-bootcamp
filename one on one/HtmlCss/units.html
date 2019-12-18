@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+    
+    html {
+        font-size: 10px;
+    }
+    
+    .test {
+        font-size: 3rem;
+    }
+    
+    .container {
+        width: 20vw;
+        border: 1px red solid;
+    }
+    
+    .percentages {
+        display: inline-block;
+        width: 50%;
+        border: 1px solid black;
+    }
+    
+    .container-vh {
+        height: 10vh;
+        width: 10vw;
+        border: 1px solid black;
+    }
+    
+    .container-em {
+        font-size: 20px;
+    }
+    
+    .child {
+        font-size: 1em;
+    }
+</style>
+
+<body>
+    <div class="container-vh">
+        <div class="vh">Hello</div>
+    </div>
+    <div class="test">Hello</div>
+    <div class="container">
+        <div class="percentages">My height and width are determined by %</div>
+        <div class="percentages">Hello</div>
+        <div class="percentages">Hello</div>
+        <div class="percentages">Hello</div>
+    </div>
+
+    <div class="container-em">
+        <div class="child">I am a child of the container-em</div>
+    </div>
+
+
+</body>
+
+</html>
+
+Units: 1) px 2) rem 3) em 4) % 5) vh,vw By default all browsers font-size is 16px; Rem is equivalent to the font-size of the html % is equivalent to the fathers width. vh and vw corresponds to the devices screen size.

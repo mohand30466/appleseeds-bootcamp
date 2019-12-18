@@ -1,0 +1,17 @@
+.section img {
+    height: 200px;
+    width: 200px;
+}
+
+.row .box {
+    height: 200px;
+    width: 200px;
+    margin: 2px;
+    background-color: green;
+}
+
+.footer {
+    text-align: center;
+    height: 100px;
+    background-color: red;
+}

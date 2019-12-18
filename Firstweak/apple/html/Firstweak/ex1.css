@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+.menu{
+    border: 1px solid black;
+    height: 50px;
+    background: rgb(151, 119, 151);
+    text-align: right;
+    
+}
+.logo{
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0%;
+
+}
+.menu a{
+    display: inline-block;
+    margin: 10px;
+}
+.social{
+    height: 25px;
+    display: inline-block;
+    
+  
+}
+.hum{
+    height: 25px;
+    display: none;
+}
+@media(max-width: 600px){
+.hum{
+    display: block;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.social{
+    display: none;
+}
+.menu a{
+    display: none;
+}
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var testMin = (a, b) => a < b ? a : b;
+
+        function test_equal(actual, expected, msg) {
+            if (actual !== expected) {
+                console.log(`Error testing ${msg || ''}. expected: ${expected}, got ${actual}`)
+            }
+        }
+        test_equal(testMin((a, b) => a < b ? a : b, -100, 3), 3);
+
+        test_equal(testMin((a, b) => a < b ? a : b, 45, 43), 45);
+
+        test_equal(testSubstring(substringFunct, "ES6 is great", "eat"), true);
+        test_equal(testSubstring(substringFunct, "ES6 is great", "ES7"), false);
+        test_equal(testSubstring(substringFunct, "momomomomom", "omom"), true);
+    </script>
+
+</body>
+
+</html>

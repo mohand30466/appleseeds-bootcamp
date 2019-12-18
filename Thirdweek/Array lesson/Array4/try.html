@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num1 = prompt("enter minmum number");
+        var num2 = prompt("enter maximum number");
+        var numbers = [2, 5, 66, 7, 88, 9, 2, 33, 4, 5];
+
+        var result = (min, max, number) => {
+            var result = number.filter(function(i) {
+                return i > min && i < max;
+            })
+            return result;
+        }
+        console.log(num1, num2, numbers)
+    </script>
+
+</body>
+
+</html>
