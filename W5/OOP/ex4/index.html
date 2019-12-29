@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+      class Jewel{
+               constructor(type, price){
+                     this.type = type;
+                     this.price = price;
+ 
+                 }
+             }
+             function getHigherPrice (ring, bracelet){
+            
+             if(ring.price > bracelet.price){
+                 return ring;
+             }
+             else{
+                 return bracelet;
+             }
+             }
+
+           let ring = new Jewel("ring", 200);
+         let bracelet = new Jewel("bracelet", 300);
+         console.log(getHigherPrice(ring, bracelet) 
+       )
+
+    
+    
+    
+    </script>
+    
+</body>
+</html>

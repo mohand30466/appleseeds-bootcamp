@@ -1,0 +1,33 @@
+
+
+.board{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    border: 1px solid black ;
+    background-color: rgb(188, 188, 218);
+    margin: auto;
+   
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    /* border: blue solid; */
+}
+
+.cel{
+    width: 24%;
+    height: 33.333%;
+    border: 1px white solid;
+    flex-wrap: wrap;
+    
+    /* margin: auto; */
+
+}
+img{
+    width: 100%;
+    height: 100%;
+}

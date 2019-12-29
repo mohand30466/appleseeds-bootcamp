@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+         let dog = {
+            name: "sparky"
+            };
+        let black_dog = {
+            name: "blacky"
+            }
+            const x16 = dog;
+            x16 = black_dog;
+            x16;
+            // x16 is  Object
+            // that will brint undefined
+            // here we have tow Object dog and black_dog and they have the same object name 
+            //  that mean we cant change the const object 
+            
+
+            // ** case 2:
+            let dog = {
+            name: "sparky"
+            };
+            let black_dog = {
+            name: "blacky"
+            }
+            const x16 = dog;
+            dog.name = "blacky";
+            x16;
+            // undefined becouse we change the dog object to const x16
+    
+    
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>

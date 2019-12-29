@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #img {
+            height: 100px;
+            width: 150px;
+            background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        }
+    </style>
+</head>
+
+<body>
+    <div id="img"></div>
+    <button id="btn" onclick="myfun()">click</button>
+    <button id="btn1" onclick="myfun1()">click1</button>
+    <button id="btn2" onclick="myfun2()">click2</button>
+
+
+    <script>
+        function myfun() {
+            document.getElementById("img").style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MPDf_zuLLgM1zmWVZiyJpFTgj4md4MljfRlLzOtV-VdeVbPu&s)";
+
+        }
+
+        function myfun1() {
+            document.getElementById("img").style.backgroundImage = "url(https://image.shutterstock.com/image-photo/spring-blossom-over-wood-background-260nw-196722200.jpg)";
+
+        }
+
+        function myfun2() {
+            document.getElementById("img").style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlqaiQ0NDNTmhWbOtSTv46hU3bQ1wRbPxcwJ84KswVRmeOxiEi&s)";
+
+        }
+    </script>
+
+
+</body>
+
+</html>

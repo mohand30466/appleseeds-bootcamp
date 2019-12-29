@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Account{
+            constructor(sum) {
+                this.sum = sum;
+                
+            }
+            deposit(value){
+                  //increase sum
+                //   this.sum = this.sum + value
+                  this.sum += value
+            
+
+            }
+            withdraw(value){
+                //decrease sum
+                this.sum -= value
+
+
+
+            }
+        }
+
+        const account = new Account(500);
+        console.log(account);
+        
+        account.deposit(20)
+        account.withdraw(100)
+
+        console.log(account);
+        
+       
+
+    
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>

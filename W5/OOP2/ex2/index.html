@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Point{
+            constructor(x, y){
+                this.x = x;
+                this.y = y;
+            }
+            plus(instance){
+             
+              return new Point(this.x + instance.x,this.y + instance.y)
+
+                // const point3 = new Point(point1.x + point2.x,point1.y + point2.y);
+                // return point3;
+                //  const instance = new plus(5)
+
+                // console.log(point3)
+            
+
+                
+
+             
+            }
+        }
+        const point1 = new Point(3, 0);
+        const point2 = new Point(5, 2);
+       
+        const point3 = point1.plus(point2)
+        // console.log(point3);
+
+        const myObj = {
+            array:[],
+            func: (instance1,instance2) => {
+               return new Point(instance1.x+instance2.x,instance1.y+instance2.y)
+
+            },
+            obj: {
+
+            },
+            bla: 1+1,
+
+        }
+
+        const newInstance = myObj.func(point1,point2)
+      
+
+        const myFunction =(a,b) =>{
+           return  a+b 
+        }
+        
+        // console.log(myFunction(1,1))
+
+        const array = [[1,2,3,4],[5,6,7,8]];
+
+       const newArray =  array.map(element => {
+        console.log(element);
+           element.map(innerElement => {
+               console.log(innerElement);      
+           })
+        })
+
+        console.log(newArray);
+
+        
+
+    
+        
+        
+    
+          
+      
+      
+
+
+        // Point.plus(4);
+    //you create a point
+    //you create method thats takes a point
+    //and that method combines the x and y and creates a new instance of point with it.
+    
+    
+    </script>
+    
+</body>
+</html>

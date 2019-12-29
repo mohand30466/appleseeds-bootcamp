@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <p id="text">This is the text that we wont change</p>
+    <button id="btn">+</button>
+    <button id="btn1">-</button>
+
+
+
+
+    <script>
+        var size = document.getElementById("text").style.fontSize = "rem";
+
+
+        document.getElementById("btn").addEventListener("click", function() {
+            document.getElementById("text").style.fontSize = "100px";
+        });
+        document.getElementById("btn1").addEventListener("click", function() {
+            document.getElementById("text").style.fontSize = "6px";
+
+
+        });
+    </script>
+</body>
+
+</html>

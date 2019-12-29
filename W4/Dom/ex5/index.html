@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="number"></div>
+
+
+
+    <script>
+        function test_equal(arguments) {
+            var sum = arguments;
+            return function private() {
+                for (var i = 0; i < arguments.length; i++) {
+                    newSum = sum + arguments;
+                    console.log(newSum)
+                    var sumNum = document.getElementById("#number");
+                    sumNum.innerHTML = "newSum"
+                }
+
+            }
+        }
+
+        test_equal(4);
+        test_equal(10);
+        test_equal(6);
+        test_equal(0);
+        console.log(sum)
+    </script>
+</body>
+
+</html>

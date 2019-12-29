@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+    <script>
+    
+
+            // var storm = {
+            //     superpower:"flying",
+            //     print: printSuperPower 
+
+            //     }
+            //     function printSuperPower(){
+            //     console.log("my super power is " + this.superpower);
+            //     }
+                        //     storm.print();
+             var batman = {
+                  name: "Bruce Wayne"
+               }
+
+              var wonderWoman = {
+            name: "Diana Prince"
+            }
+            var superHeroes = [wonderWoman, batman];
+            function printName() {
+            console.log("My name is " + this.name);
+                   }
+          function printHeroes(heroes, printFunc){
+              for(var i = 0; i <heroes.length;i ++){
+              
+            var hero1 = printFunc.bind(heroes[0]);
+            var hero2 = printFunc.bind(heroes[1]);
+            hero1();
+            hero2();
+              }
+
+
+
+
+          
+            }
+            printHeroes(superHeroes, printName);
+
+                            
+    
+    
+    
+    </script>
+    
+</body>
+</html>

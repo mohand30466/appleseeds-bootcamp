@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var newValue = {
+                name:"Biko"
+            }
+         var spiderMan = {
+        favourite_animal: "spider"
+        }
+        var fly = printFavouriteAnimal.bind(newValue);
+
+
+        function printFavouriteAnimal(){
+        console.log(this.favourite_animal);
+        return this.newValue;
+        console.log(newValue)
+        }
+        function addHello(obj){
+            obj.hello ="Hello"
+        }
+     
+        addHello(spiderMan)
+        console.log(spiderMan);
+
+        
+        
+      
+
+</script>
+    
+</body>
+</html>

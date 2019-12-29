@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<style>
+    .container{
+      
+        width: 100vw;
+        height: 100vh;
+       
+    }
+    .screen{
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid black;
+        height: 500px;
+        width: 500px;
+    }
+    .footer{
+        border: 1px solid black;
+        height: 100px;
+        width: 500px;
+    }
+    button{
+        margin-top: 15px  ;
+        height: 70px;
+        width: 70px;
+    }
+    .hello{
+        background-color: blanchedalmond;
+        height: 10px;
+        width: 10px;
+    }
+    #green{
+        background-color: green;
+    }
+    .blue{
+        background-color: blue;
+    }
+    .red{
+        background-color: red;
+    }
+    .yellow{
+        background-color: yellow;
+    }
+    .black{
+        background-color: black;
+        color: white;
+    }
+
+
+
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="screen">
+            
+
+        </div>
+        <div class="footer">
+            <button id="green">green</button>
+            <button class="blue">plue</button>
+            <button class="red">red</button>
+            <button class="yellow">yellow</button>
+            <button class="black">black</button>
+        
+
+        </div>
+    </div>
+
+    <script>
+            let div = document.createElement("div");
+                div.classList.add("hello");
+
+             
+            const newscreen = ()=>{
+            for(let i = 0; i < 2500; i++){
+                    let div = document.createElement("div");
+                    div.classList.add("hello");
+                newDiv = document.querySelector(".screen").appendChild(div);
+                newDiv++
+
+                }
+            } 
+             newscreen();
+                            
+                document.getElementById("green").addEventListener("click",()=>{
+                   var mouseOver = document.querySelector("hello");
+                   mouseOver.addEventListener("mouseover",()=>{
+                        var bgColor = document.querySelector("hello");
+                        bgColor.style.backgroundColor= "green";
+                    });
+
+            });
+           
+                     
+    </script>
+    
+</body>
+</html>
+<!-- // great a div for any pixel -->
+ <!-- gives the dives class name and append it to screen -->
+ <!-- add event listener to button to make action on pixeldiv -->
+ <!-- add event listener to on mouse over to change background colorchoose mouse to drow?? -->
+ <!-- give the button difrend color? -->
+ <!-- active the mouse with the difrend color from the div? -->

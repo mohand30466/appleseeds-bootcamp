@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #btn {
+        background-color: red;
+        width: 100px;
+        height: 30px;
+    }
+</style>
+
+<body>
+    <button id="btn">Stop</button>
+    <div id="count"></div>
+
+
+
+
+    <script>
+        let i = 0
+        count = document.querySelector("#count")
+        var num = window.setInterval(() => {
+            i++;
+            count.innerHTML += `${i}<br>`;
+        }, 1000);
+        document.getElementById("btn").addEventListener("click", () => {
+            clearInterval(num);
+
+        })
+    </script>
+
+</body>
+
+</html>

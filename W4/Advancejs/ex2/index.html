@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>The time is</h1>
+    <div id="date"></div>
+
+    <!-- document.getElementById("hour").addEventListener("click", -->
+
+    <script>
+        window.setInterval(() => {
+            var x = new Date();
+            var hour = x.getHours();
+            var minute = x.getMinutes();
+            var second = x.getSeconds();
+            console.log(hour);
+
+            document.getElementById('date').innerHTML = `${hour}:${minute}:${second}`;
+        }, 1000);
+    </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .smiley {
+        height: 100px;
+        width: 100px;
+    }
+    
+    img {
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<body>
+    <input type="text" id="getNum">
+    <button class="button">Submit</button>
+    <div class="contaner">
+
+    </div>
+
+    <script>
+        // var myFunc = () => {
+        //     console.log("hi");
+
+        // }
+        // document.querySelector(".button").addEventListener("click", myFunc)
+
+
+
+        //1)Add eventlistener to submit button
+        //2) Get the value from input
+        //3) loop over the input number
+
+        //Inside the loop 
+
+        //4)Create a image tag\
+        //5) give the image a class name
+        //6)we have to insert a src link
+        //7) we put it in the DOM
+
+        document.querySelector(".button").addEventListener("click", () => {
+
+
+            var value = document.getElementById("getNum").value;
+            console.log(value);
+            for (var i = 0; i < value; i++) {
+                var image = document.createElement("img")
+                image.classList.add("img")
+                image.src = "smile.png"
+
+                var container = document.querySelector(".contaner")
+                container.appendChild(image)
+
+            }
+
+        })
+
+
+
+        var newElement = document.createElement("p");
+        newElement.classList.add("hello")
+    </script>
+</body>
+
+</html>
