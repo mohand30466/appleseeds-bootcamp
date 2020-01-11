@@ -1,0 +1,81 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    background-image: url(http://www.allwhitebackground.com/images/6/Bright-Background-Photos.jpg);
+}
+.welcome{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height:16%;
+    color: rgb(45, 133, 204);
+}
+
+.myName{
+    align-self: flex-end;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    transform: transition;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 84%;
+    justify-content: space-around;
+   
+}
+
+.inform{
+    width: 25%; 
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    justify-items: center;
+}
+
+.show{
+    width: 60%;
+    height: 90%;
+    background-color: aquamarine;    
+}
+
+.btn{
+    width: 70%;
+    font-weight: 900;
+    align-self: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+   
+.info{
+    width: 100%;
+    height: 100%;
+    
+}
+.btn:hover{
+    color: chartreuse;
+}
+#img{
+    width: 100%;
+    height: 100%;
+}
+.new-imge{
+    width: 100%;
+    height: 100%;
+}
